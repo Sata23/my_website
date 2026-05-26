@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Santanu Sarker | AI, Agentic Automation &amp; Product Analysis Expert</title>
+  <meta name="description" content="Industry-agnostic expert in Agentic AI, Data/Market Analysis, and Scalable Web Development. Building high-ROI automation apps and digital marketing systems." />
+  <meta name="keywords" content="AI Agent Development, SEO Optimization, Agentic Automation, SaaS Architect, Santanu Sarker, Wibblewobbletech, Revenue Growth" />
+  <link rel="canonical" href="https://wibblewobbletech.com" />
+
+  <meta property="og:title" content="WibbleWobble Tech | AI Solution Architect &amp; Product Studio" />
+  <meta property="og:description" content="Engineering the Future of Agentic AI. I build autonomous systems that scale businesses and drive ROI." />
+  <meta property="og:url" content="https://wibblewobbletech.com" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://wibblewobbletech.com/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Santanu Sarker",
+    "jobTitle": "Senior Solution Architect",
+    "url": "https://wibblewobbletech.com",
+    "sameAs": ["https://linkedin.com/in/santanusarker"],
+    "description": "Senior Solution Architect and Product Developer specializing in AI integration, Flutter, and Next.js.",
+    "brand": { "@type": "Brand", "name": "WibbleWobble Tech" }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <style>
+    :root {
+      --bg:         #020617;
+      --bg-glass:   rgba(15, 23, 42, 0.6);
+      --card:       rgba(30, 41, 59, 0.4);
+      --card-hover: rgba(51, 65, 85, 0.5);
+      --border:     rgba(255, 255, 255, 0.05);
+      --border-h:   rgba(255, 255, 255, 0.12);
+      --primary:    #38BDF8;
+      --primary-lp: rgba(56, 189, 248, 0.1);
+      --primary-h:  #0EA5E9;
+      --accent:     #8B5CF6;
+      --text:       #F1F5F9;
+      --muted:      #94A3B8;
+      --white:      #FFFFFF;
+      --electric:   #39FF14;
+      --glass-blur: blur(20px);
+      --mono:       'JetBrains Mono', monospace;
+      --sans:       'Inter', sans-serif;
+      --head:       'Poppins', sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--sans); background: var(--bg); color: var(--text); line-height: 1.7; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+    .blob-wrap { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -2; pointer-events: none; overflow: hidden; }
+    .blob { position: absolute; border-radius: 50%; filter: blur(120px); opacity: 0.15; animation: drift 20s infinite alternate; }
+    .blob-1 { width: 500px; height: 500px; background: var(--primary); top: -100px; right: -100px; animation-duration: 25s; }
+    .blob-2 { width: 400px; height: 400px; background: #8B5CF6; bottom: 10%; left: -50px; animation-duration: 18s; animation-delay: -5s; }
+    .blob-3 { width: 600px; height: 600px; background: #0EA5E9; top: 40%; right: 10%; animation-duration: 30s; animation-delay: -10s; }
+    @keyframes drift { from { transform: translate(0,0) scale(1); } to { transform: translate(100px,50px) scale(1.1); } }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+    section { padding: 100px 0; position: relative; }
+    .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s cubic-bezier(0.16,1,0.3,1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .gradient-text { background: linear-gradient(135deg,#60A5FA 0%,#2563EB 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+    .section-label { font-family: var(--mono); font-size: 0.78rem; color: var(--primary); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 12px; }
+    .section-title { font-family: var(--head); font-size: clamp(2.25rem,5vw,3.25rem); font-weight: 800; color: var(--white); line-height: 1.15; margin-bottom: 24px; letter-spacing: -0.02em; }
+    .section-title span { color: var(--primary); }
+    .section-sub { font-size: clamp(1rem,2vw,1.15rem); color: var(--muted); max-width: 650px; margin-bottom: 60px; line-height: 1.8; }
+    .center { text-align: center; }
+    .center .section-sub { margin-left: auto; margin-right: auto; }
+    .btn { display: inline-flex; align-items: center; gap: 10px; padding: 14px 28px; border-radius: 12px; font-family: var(--sans); font-weight: 600; font-size: 0.95rem; cursor: pointer; transition: all 0.3s cubic-bezier(0.16,1,0.3,1); border: none; white-space: nowrap; text-decoration: none; }
+    .btn-primary { background: var(--primary); color: var(--white); box-shadow: 0 4px 20px rgba(37,99,235,0.3); }
+    .btn-primary:hover { background: var(--primary-h); transform: translateY(-3px); box-shadow: 0 8px 30px rgba(37,99,235,0.4); }
+    .btn-outline { background: transparent; color: var(--text); border: 1px solid var(--border); }
+    .btn-outline:hover { border-color: var(--primary); transform: translateY(-3px); }
+    .btn-ghost { background: transparent; color: var(--text); }
+    .btn-ghost:hover { background: rgba(255,255,255,0.05); color: var(--primary); }
+    .btn-accent { background: #FF0000; color: #fff; }
+    .btn-accent:hover { background: #CC0000; transform: translateY(-3px); }
+    .badge { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 20px; font-size: 0.78rem; font-weight: 600; font-family: var(--mono); letter-spacing: 0.02em; }
+    .badge-blue { background: rgba(37,99,235,0.1); color: #60A5FA; border: 1px solid rgba(37,99,235,0.2); }
+    .badge-green { background: rgba(16,185,129,0.1); color: #34D399; border: 1px solid rgba(16,185,129,0.2); }
+    .badge-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; box-shadow: 0 0 10px currentColor; animation: pulse 2s infinite; }
+    @keyframes pulse { 0% { opacity:1; } 50% { opacity:0.4; } 100% { opacity:1; } }
+    nav { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; padding: 24px 0; transition: all 0.4s cubic-bezier(0.16,1,0.3,1); border-bottom: 1px solid transparent; }
+    nav.scrolled { background: var(--bg-glass); backdrop-filter: var(--glass-blur); -webkit-backdrop-filter: var(--glass-blur); padding: 14px 0; border-bottom: 1px solid var(--border); box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; }
+    .nav-logo { font-family: var(--head); font-weight: 700; font-size: 1.25rem; color: var(--white); text-decoration: none; display: flex; align-items: center; gap: 10px; }
+    .logo-mark { width: 32px; height: 32px; background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center; border-radius: 8px; font-weight: 800; }
+    .nav-links { list-style: none; display: flex; gap: 32px; }
+    .nav-links a { color: var(--text); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.3s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--primary); }
+    .nav-cta { display: flex; align-items: center; gap: 16px; }
+    #hero { padding-top: 180px; padding-bottom: 120px; min-height: 100vh; display: flex; align-items: center; }
+    .hero-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 80px; align-items: center; }
+    .hero-title { font-family: var(--head); font-size: 4rem; font-weight: 800; color: var(--white); line-height: 1.1; margin-bottom: 24px; }
+    .hero-sub { font-size: 1.15rem; color: var(--muted); margin-bottom: 40px; max-width: 540px; }
+    .hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; }
+    .hero-card { background: var(--card); backdrop-filter: var(--glass-blur); -webkit-backdrop-filter: var(--glass-blur); border: 1px solid var(--border); border-radius: 28px; padding: 32px; box-shadow: 0 20px 50px rgba(0,0,0,0.3); position: relative; overflow: hidden; transition: transform 0.4s ease; }
+    .hero-card:hover { transform: translateY(-5px); border-color: var(--border-h); }
+    .hero-card::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle at center,rgba(59,130,246,0.08) 0%,transparent 70%); z-index: 0; }
+    .hero-card-header { position: relative; z-index: 1; display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+    .avatar { width: 56px; height: 56px; background: rgba(255,255,255,0.05); border-radius: 14px; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .hero-card-title { font-size: 1.15rem; font-weight: 700; color: var(--white); margin-bottom: 2px; }
+    .hero-card-sub { font-size: 0.82rem; color: var(--muted); font-family: var(--mono); }
+    .stat-grid { position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+    .stat-box { background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: 16px; padding: 14px; transition: all 0.3s ease; }
+    .stat-box:hover { background: rgba(255,255,255,0.08); border-color: var(--border-h); }
+    .stat-num { font-size: 1.35rem; font-weight: 700; color: var(--white); margin-bottom: 2px; }
+    .stat-lbl { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+    .availability-bar { position: relative; z-index: 1; display: flex; align-items: center; gap: 10px; background: rgba(16,185,129,0.06); padding: 12px 16px; border-radius: 14px; border: 1px solid rgba(16,185,129,0.15); margin-bottom: 24px; }
+    .av-dot { width: 8px; height: 8px; background: #34D399; border-radius: 50%; animation: pulse 2s infinite; }
+    .av-text { font-size: 0.88rem; color: #34D399; font-weight: 600; }
+    .av-sub { font-size: 0.8rem; color: var(--muted); margin-left: auto; }
+    .tech-row { position: relative; z-index: 1; display: flex; flex-wrap: wrap; gap: 8px; }
+    .tech-pill { font-size: 0.72rem; background: rgba(255,255,255,0.04); color: var(--text); padding: 5px 12px; border-radius: 8px; border: 1px solid var(--border); font-family: var(--mono); }
+    .stats-strip { background: rgba(15,23,42,0.8); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 60px 0; }
+    .stats-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 40px; }
+    .stat-item { text-align: center; }
+    .stat-big { font-family: var(--head); font-size: 3rem; font-weight: 800; color: var(--white); margin-bottom: 8px; line-height: 1; }
+    .stat-big span { color: var(--primary); }
+    .stat-label { font-size: 0.9rem; color: var(--muted); font-weight: 500; }
+    .about-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 100px; align-items: center; }
+    .about-img-wrap { position: relative; border-radius: 30px; overflow: hidden; border: 1px solid var(--border); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+    .about-img-placeholder { width: 100%; aspect-ratio: 4/5; background: var(--bg-glass); backdrop-filter: var(--glass-blur); -webkit-backdrop-filter: var(--glass-blur); display: flex; flex-direction: column; align-items: center; justify-content: center; }
+    .about-img-placeholder img { width: 100%; height: 100%; object-fit: cover; }
+    .about-badge-float { position: absolute; bottom: 30px; right: -30px; background: var(--primary); color: #fff; padding: 24px; border-radius: 20px; box-shadow: 0 20px 40px rgba(37,99,235,0.3); }
+    .about-badge-float .num { font-size: 1.75rem; font-weight: 800; margin-bottom: 4px; line-height: 1; }
+    .about-badge-float .lbl { font-size: 0.75rem; font-weight: 600; font-family: var(--mono); text-transform: uppercase; line-height: 1.3; }
+    .skill-tag { display: inline-block; background: rgba(255,255,255,0.03); border: 1px solid var(--border); padding: 8px 16px; border-radius: 12px; font-size: 0.88rem; color: var(--text); margin: 0 8px 12px 0; transition: all 0.3s; }
+    .skill-tag:hover { border-color: var(--primary); color: var(--white); transform: translateY(-2px); }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(340px,1fr)); gap: 32px; }
+    .service-card { background: var(--bg-glass); backdrop-filter: var(--glass-blur); -webkit-backdrop-filter: var(--glass-blur); border: 1px solid var(--border); border-radius: 24px; padding: 48px; transition: all 0.4s cubic-bezier(0.16,1,0.3,1); }
+    .service-card:hover { border-color: var(--primary); transform: translateY(-10px) scale(1.02); background: var(--card-hover); box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
+    .service-icon { width: 50px; height: 50px; background: rgba(37,99,235,0.1); color: var(--primary); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 24px; }
+    .service-title { font-family: var(--head); font-size: 1.35rem; font-weight: 700; color: var(--white); margin-bottom: 16px; }
+    .service-desc { font-size: 0.95rem; color: var(--muted); margin-bottom: 24px; line-height: 1.6; }
+    .service-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .service-tag { font-family: var(--mono); font-size: 0.72rem; padding: 4px 10px; border-radius: 6px; background: rgba(255,255,255,0.03); color: var(--muted); border: 1px solid var(--border); }
+    .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(320px,1fr)); gap: 32px; }
+    .project-card { background: var(--bg-glass); backdrop-filter: var(--glass-blur); -webkit-backdrop-filter: var(--glass-blur); border: 1px solid var(--border); border-radius: 28px; overflow: hidden; transition: all 0.4s cubic-bezier(0.16,1,0.3,1); }
+    .project-card:hover { border-color: var(--primary); transform: translateY(-10px); box-shadow: 0 25px 50px rgba(0,0,0,0.4); }
+    .project-thumb { width: 100%; aspect-ratio: 16/9; background: rgba(15,23,42,0.8); display: flex; align-items: center; justify-content: center; font-size: 3rem; border-bottom: 1px solid var(--border); }
+    .project-body { padding: 32px; }
+    .project-title { font-family: var(--head); font-size: 1.25rem; font-weight: 700; color: var(--white); margin-bottom: 12px; }
+    .project-desc { font-size: 0.92rem; color: var(--muted); margin-bottom: 24px; }
+    .project-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+    .project-tag { font-family: var(--mono); font-size: 0.7rem; color: var(--primary); background: rgba(37,99,235,0.08); padding: 4px 10px; border-radius: 6px; }
+    .project-link { font-size: 0.9rem; font-weight: 600; color: var(--white); text-decoration: none; display: inline-flex; align-items: center; gap: 8px; }
+    .project-link i { transition: transform 0.3s; }
+    .project-link:hover i { transform: translateX(5px); }
+    /* Multiple case study links */
+    .case-study-links { display: flex; flex-direction: column; gap: 8px; }
+    .case-study-links .project-link { font-size: 0.85rem; }
+
+    /* ── LOOM VIDEO SECTION ── */
+    #loom-videos { padding: 80px 0; }
+    .loom-section-header { margin-bottom: 48px; }
+    .loom-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px; }
+    .loom-card { background: var(--bg-glass); backdrop-filter: var(--glass-blur); -webkit-backdrop-filter: var(--glass-blur); border: 1px solid var(--border); border-radius: 20px; overflow: hidden; transition: all 0.4s cubic-bezier(0.16,1,0.3,1); text-decoration: none; display: block; }
+    .loom-card:hover { border-color: var(--primary); transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+    .loom-thumb-wrap { position: relative; width: 100%; aspect-ratio: 16/9; overflow: hidden; background: #0f172a; }
+    .loom-thumb-wrap iframe { width: 100%; height: 100%; border: none; pointer-events: none; }
+    .loom-play-overlay { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background: rgba(2,6,23,0.45); transition: background 0.3s; cursor: pointer; }
+    .loom-card:hover .loom-play-overlay { background: rgba(2,6,23,0.2); }
+    .loom-play-btn { width: 52px; height: 52px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; color: #fff; box-shadow: 0 4px 20px rgba(56,189,248,0.5); transition: transform 0.3s; }
+    .loom-card:hover .loom-play-btn { transform: scale(1.12); }
+    .loom-duration { position: absolute; bottom: 10px; right: 12px; background: rgba(0,0,0,0.75); color: #fff; font-size: 0.7rem; font-family: var(--mono); padding: 3px 8px; border-radius: 5px; }
+    .loom-info { padding: 20px 22px; }
+    .loom-label { font-family: var(--mono); font-size: 0.68rem; color: var(--primary); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 6px; }
+    .loom-title { font-family: var(--head); font-size: 0.95rem; font-weight: 700; color: var(--white); line-height: 1.4; margin-bottom: 10px; }
+    .loom-watch { font-size: 0.82rem; font-weight: 600; color: var(--primary); display: inline-flex; align-items: center; gap: 6px; }
+    .loom-watch i { font-size: 0.7rem; transition: transform 0.3s; }
+    .loom-card:hover .loom-watch i { transform: translateX(4px); }
+
+    .schedule-layout { display: grid; grid-template-columns: 1fr 1.2fr; gap: 60px; align-items: start; }
+    .session-cards { display: grid; gap: 16px; }
+    .session-card { background: var(--bg-glass); backdrop-filter: var(--glass-blur); -webkit-backdrop-filter: var(--glass-blur); border: 1px solid var(--border); border-radius: 20px; padding: 24px; cursor: pointer; display: flex; align-items: center; gap: 16px; transition: all 0.3s; }
+    .session-card:hover { border-color: var(--primary); background: rgba(255,255,255,0.05); }
+    .session-card.active { border-color: var(--primary); background: var(--primary-lp); box-shadow: 0 0 30px rgba(59,130,246,0.2); }
+    .session-icon { width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.25rem; }
+    .session-title { font-weight: 700; color: var(--white); margin-bottom: 4px; }
+    .session-meta { font-size: 0.82rem; color: var(--muted); display: flex; align-items: center; gap: 6px; }
+    .session-price { font-family: var(--head); font-weight: 800; font-size: 1.1rem; margin-left: auto; }
+    .timezone-bar { background: var(--bg-glass); backdrop-filter: var(--glass-blur); -webkit-backdrop-filter: var(--glass-blur); border: 1px solid var(--border); border-radius: 20px; padding: 28px; }
+    .tz-row { display: flex; justify-content: space-between; font-size: 0.9rem; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .tz-row:last-child { border: none; }
+    .calendly-wrap { height: 200px; background: var(--bg-glass); backdrop-filter: var(--glass-blur); -webkit-backdrop-filter: var(--glass-blur); border-radius: 28px; border: 1px solid var(--border); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 40px; }
+    .yt-banner { background: linear-gradient(135deg,#111D35 0%,#0D1526 100%); border: 1px solid var(--border); border-radius: 24px; padding: 60px; display: flex; align-items: center; justify-content: space-between; overflow: hidden; position: relative; }
+    .yt-banner::after { content: ''; position: absolute; top: -20%; right: -10%; width: 300px; height: 300px; background: rgba(255,0,0,0.05); filter: blur(60px); border-radius: 50%; z-index: 0; }
+    .yt-info { position: relative; z-index: 1; max-width: 500px; }
+    .yt-channel-name { font-family: var(--head); font-size: 2rem; font-weight: 800; color: var(--white); margin-bottom: 12px; }
+    .yt-desc { font-size: 1rem; color: var(--muted); margin-bottom: 32px; }
+    .yt-icon-wrap { font-size: 8rem; color: #FF0000; opacity: 0.1; position: relative; z-index: 1; margin-right: -20px; transform: rotate(-10deg); }
+    .connect-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .connect-card { background: var(--bg-glass); backdrop-filter: var(--glass-blur); -webkit-backdrop-filter: var(--glass-blur); border: 1px solid var(--border); border-radius: 24px; padding: 32px; text-decoration: none; display: flex; align-items: center; gap: 24px; transition: all 0.3s cubic-bezier(0.16,1,0.3,1); }
+    .connect-card:hover { border-color: var(--primary); transform: translateY(-8px); background: var(--card-hover); box-shadow: 0 15px 30px rgba(0,0,0,0.3); }
+    .connect-icon { width: 60px; height: 60px; border-radius: 16px; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; color: var(--white); }
+    .connect-card.whatsapp .connect-icon { background: #128C7E; }
+    .connect-card.linkedin .connect-icon { background: #0077B5; }
+    .connect-name { font-family: var(--head); font-size: 1.25rem; font-weight: 700; color: var(--white); flex: 1; }
+    .connect-action { font-size: 0.85rem; font-weight: 600; color: var(--primary); display: flex; align-items: center; gap: 8px; }
+    .hire-layout { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 80px; align-items: center; }
+    .pricing-cards { display: grid; gap: 16px; margin-top: 32px; }
+    .pricing-card { background: rgba(30,41,59,0.5); border: 1px solid var(--border); border-radius: 16px; padding: 24px; display: flex; justify-content: space-between; align-items: center; }
+    .pricing-card.featured { border-color: var(--primary); background: rgba(37,99,235,0.05); }
+    .pricing-tier { font-weight: 700; color: var(--white); margin-bottom: 4px; }
+    .pricing-scope { font-size: 0.82rem; color: var(--muted); }
+    .pricing-price { font-family: var(--head); font-weight: 800; font-size: 1.25rem; color: var(--primary); }
+    .hire-cta-box { background: var(--card); border: 1px solid var(--border); border-radius: 24px; padding: 48px; text-align: center; }
+    .hire-btns { display: grid; gap: 12px; margin-top: 32px; }
+    footer { background: #030712; padding: 80px 0 40px; border-top: 1px solid var(--border); }
+    .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1.5fr; gap: 60px; margin-bottom: 60px; }
+    .footer-logo { font-family: var(--head); font-weight: 700; font-size: 1.25rem; color: var(--white); margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+    .footer-desc { color: var(--muted); font-size: 0.9rem; line-height: 1.6; }
+    .footer-col-title { font-family: var(--head); font-size: 0.9rem; font-weight: 700; color: var(--white); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 24px; }
+    .footer-links { list-style: none; }
+    .footer-links li { margin-bottom: 12px; }
+    .footer-links a { color: var(--muted); text-decoration: none; font-size: 0.9rem; transition: color 0.3s; }
+    .footer-links a:hover { color: var(--primary); }
+    .footer-contact-item { display: flex; align-items: center; gap: 12px; color: var(--muted); font-size: 0.9rem; margin-bottom: 16px; }
+    .footer-contact-item i { color: var(--primary); width: 16px; }
+    .footer-contact-item a { color: inherit; text-decoration: none; }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.05); padding-top: 40px; }
+    .footer-bottom-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
+    .footer-copy { color: var(--muted); font-size: 0.85rem; }
+    .footer-regions { display: flex; gap: 12px; }
+    .region-chip { font-size: 0.7rem; color: var(--muted); background: rgba(255,255,255,0.03); padding: 4px 10px; border-radius: 6px; border: 1px solid var(--border); }
+    .mobile-menu { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: var(--bg); z-index: 2000; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 32px; opacity: 0; pointer-events: none; transition: all 0.4s cubic-bezier(0.16,1,0.3,1); transform: scale(1.1); }
+    .mobile-menu.open { opacity: 1; pointer-events: auto; transform: scale(1); }
+    .mobile-close { position: absolute; top: 30px; right: 30px; font-size: 1.5rem; color: var(--white); cursor: pointer; }
+    .mobile-menu a { font-size: 1.75rem; font-weight: 700; color: var(--white); text-decoration: none; font-family: var(--head); }
+    .hamburger { display: none; cursor: pointer; flex-direction: column; gap: 6px; }
+    .hamburger span { width: 28px; height: 2px; background: var(--white); border-radius: 2px; transition: 0.3s; }
+    .wa-float { position: fixed; bottom: 100px; right: 30px; width: 60px; height: 60px; background: #25D366; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.75rem; box-shadow: 0 10px 30px rgba(37,211,102,0.3); z-index: 900; transition: all 0.3s; text-decoration: none; }
+    .wa-float:hover { transform: scale(1.1) rotate(5deg); }
+    .wa-tooltip { position: absolute; right: 80px; background: #fff; color: #333; padding: 8px 16px; border-radius: 8px; font-size: 0.85rem; font-weight: 600; white-space: nowrap; opacity: 0; pointer-events: none; transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+    .wa-float:hover .wa-tooltip { opacity: 1; transform: translateX(-10px); }
+    .featured-neon { border-color: #39FF14 !important; background: rgba(57,255,20,0.05) !important; box-shadow: 0 0 20px rgba(57,255,20,0.1) !important; position: relative; overflow: hidden; }
+    .featured-neon::after { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle,rgba(57,255,20,0.05) 0%,transparent 70%); z-index: 0; pointer-events: none; }
+    .neon-text { color: #39FF14 !important; text-shadow: 0 0 10px rgba(57,255,20,0.5); }
+    .neon-glow { color: #39FF14 !important; background: rgba(57,255,20,0.1) !important; box-shadow: 0 0 15px rgba(57,255,20,0.2); }
+    .neon-border { border-color: rgba(57,255,20,0.3) !important; color: #39FF14 !important; }
+    .btn-neon { background: #39FF14 !important; color: #000 !important; font-weight: 800 !important; box-shadow: 0 0 20px rgba(57,255,20,0.4); animation: pulse-neon 2s infinite; }
+    .btn-neon:hover { transform: scale(1.05) translateY(-3px); box-shadow: 0 0 30px rgba(57,255,20,0.6); }
+    @keyframes pulse-neon { 0% { box-shadow: 0 0 10px rgba(57,255,20,0.4); } 50% { box-shadow: 0 0 25px rgba(57,255,20,0.7); } 100% { box-shadow: 0 0 10px rgba(57,255,20,0.4); } }
+
+    /* ── How I Built This ── */
+    #how-i-built { padding: 100px 0; }
+    .hibt-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; }
+    .hibt-card { background: var(--bg-glass); backdrop-filter: var(--glass-blur); -webkit-backdrop-filter: var(--glass-blur); border: 1px solid var(--border); border-radius: 24px; overflow: hidden; transition: all 0.4s cubic-bezier(0.16,1,0.3,1); display: flex; flex-direction: column; }
+    .hibt-card:hover { border-color: var(--primary); transform: translateY(-8px); box-shadow: 0 25px 50px rgba(0,0,0,0.4); }
+    .hibt-thumb { width: 100%; aspect-ratio: 16/9; overflow: hidden; position: relative; background: rgba(15,23,42,0.9); }
+    .hibt-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; display: block; }
+    .hibt-card:hover .hibt-thumb img { transform: scale(1.05); }
+    .hibt-thumb-fallback { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; }
+    .hibt-number { position: absolute; top: 14px; left: 14px; background: var(--primary); color: #fff; font-family: var(--mono); font-size: 0.7rem; font-weight: 700; padding: 4px 10px; border-radius: 6px; letter-spacing: 0.05em; }
+    .hibt-body { padding: 28px; display: flex; flex-direction: column; flex: 1; }
+    .hibt-eyebrow { font-family: var(--mono); font-size: 0.68rem; color: var(--primary); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 8px; }
+    .hibt-title { font-family: var(--head); font-size: 1.05rem; font-weight: 700; color: var(--white); line-height: 1.4; margin-bottom: 20px; flex: 1; }
+    .hibt-cta { display: inline-flex; align-items: center; gap: 8px; font-size: 0.82rem; font-weight: 600; color: var(--bg); background: var(--primary); padding: 10px 18px; border-radius: 10px; text-decoration: none; transition: all 0.3s; white-space: nowrap; }
+    .hibt-cta:hover { background: var(--primary-h); transform: translateX(4px); }
+    .hibt-cta i { font-size: 0.75rem; transition: transform 0.3s; }
+    .hibt-cta:hover i { transform: translateX(3px); }
+
+    /* ── Loom Modal ── */
+    .loom-modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 9999; align-items: center; justify-content: center; }
+    .loom-modal-overlay.active { display: flex; }
+    .loom-modal-inner { position: relative; width: 90%; max-width: 860px; aspect-ratio: 16/9; border-radius: 16px; overflow: hidden; box-shadow: 0 30px 80px rgba(0,0,0,0.6); }
+    .loom-modal-inner iframe { width: 100%; height: 100%; border: none; }
+    .loom-modal-close { position: absolute; top: -44px; right: 0; background: rgba(255,255,255,0.1); border: none; color: #fff; width: 36px; height: 36px; border-radius: 50%; cursor: pointer; font-size: 1.1rem; display: flex; align-items: center; justify-content: center; transition: background 0.2s; }
+    .loom-modal-close:hover { background: rgba(255,255,255,0.25); }
+
+    /* ── HOW I BUILD THIS ── */
+    .hibt-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; }
+    .hibt-card { background: var(--bg-glass); backdrop-filter: var(--glass-blur); -webkit-backdrop-filter: var(--glass-blur); border: 1px solid var(--border); border-radius: 24px; overflow: hidden; transition: all 0.4s cubic-bezier(0.16,1,0.3,1); display: flex; flex-direction: column; }
+    .hibt-card:hover { border-color: var(--primary); transform: translateY(-8px); box-shadow: 0 25px 50px rgba(0,0,0,0.4); }
+    .hibt-thumb { position: relative; width: 100%; aspect-ratio: 16/9; overflow: hidden; background: linear-gradient(135deg, #0f2443, #1a3a6b); }
+    .hibt-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; display: block; }
+    .hibt-card:hover .hibt-thumb img { transform: scale(1.05); }
+    .hibt-num { position: absolute; top: 14px; left: 16px; font-family: var(--mono); font-size: 0.72rem; font-weight: 700; color: #fff; background: rgba(56,189,248,0.85); padding: 4px 10px; border-radius: 6px; letter-spacing: 0.06em; }
+    .hibt-body { padding: 24px 28px 28px; display: flex; flex-direction: column; flex: 1; }
+    .hibt-tag { font-family: var(--mono); font-size: 0.68rem; color: var(--primary); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 10px; }
+    .hibt-title { font-family: var(--head); font-size: 1.05rem; font-weight: 700; color: var(--white); line-height: 1.45; margin-bottom: 20px; flex: 1; }
+    .hibt-link { display: inline-flex; align-items: center; gap: 8px; font-size: 0.83rem; font-weight: 600; color: var(--primary); text-decoration: none; padding: 10px 16px; border: 1px solid rgba(56,189,248,0.3); border-radius: 10px; background: rgba(56,189,248,0.06); transition: all 0.3s; margin-top: auto; }
+    .hibt-link:hover { background: rgba(56,189,248,0.15); border-color: var(--primary); transform: translateX(4px); }
+    .hibt-link i { font-size: 0.78rem; flex-shrink: 0; }
+
+    @media (max-width: 1024px) {
+      .hero-grid, .about-grid, .schedule-layout, .hire-layout { grid-template-columns: 1fr; gap: 60px; text-align: center; }
+      .hero-content { display: flex; flex-direction: column; align-items: center; }
+      .hero-title { font-size: 3rem; }
+      .hero-sub { margin-left: auto; margin-right: auto; }
+      .hero-ctas { justify-content: center; }
+      .about-img-wrap { max-width: 400px; margin: 0 auto; }
+      .footer-grid { grid-template-columns: 1fr; gap: 40px; text-align: center; }
+      .footer-logo, .footer-contact-item { justify-content: center; }
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+      .stats-grid { grid-template-columns: repeat(2,1fr); gap: 30px; }
+      .yt-banner { flex-direction: column; gap: 40px; text-align: center; padding: 40px; }
+      .yt-icon-wrap { margin-right: 0; transform: none; font-size: 6rem; }
+      .connect-grid { grid-template-columns: 1fr; }
+      .loom-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+    }
+  </style>
+</head>
+<body>
+  <div class="blob-wrap">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <span class="mobile-close" onclick="closeMobileMenu()"><i class="fas fa-times"></i></span>
+    <a href="#about"     onclick="closeMobileMenu()">About</a>
+    <a href="#services"  onclick="closeMobileMenu()">Services</a>
+    <a href="#portfolio" onclick="closeMobileMenu()">Work</a>
+    <a href="#how-i-built" onclick="closeMobileMenu()">Build POV</a>
+    <a href="#schedule"  onclick="closeMobileMenu()">Schedule</a>
+    <a href="#connect"   onclick="closeMobileMenu()">Connect</a>
+    <a href="#hire"      onclick="closeMobileMenu()" class="btn btn-primary" style="margin-top:16px;">Hire Me</a>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo">
+          <div class="logo-mark"><i class="fas fa-microchip"></i></div>
+          WibbleWobble Tech
+        </a>
+        <ul class="nav-links">
+          <li><a href="#about">My Expertise</a></li>
+          <li><a href="#services">Solutions</a></li>
+          <li><a href="#portfolio">Work</a></li>
+          <li><a href="#how-i-built">Build POV</a></li>
+          <li><a href="#schedule">Consult</a></li>
+          <li><a href="#connect">Contact</a></li>
+          <li><a href="/dashboard" style="color:var(--electric);font-weight:700;"><i class="fas fa-terminal"></i> Controller</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="https://wa.me/919620393657" class="btn btn-ghost" target="_blank">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+          <a href="#schedule" class="btn btn-primary" style="background:linear-gradient(135deg,var(--primary),var(--accent));">
+            <i class="far fa-calendar-check"></i> Book Audit
+          </a>
+        </div>
+        <div class="hamburger" onclick="openMobileMenu()">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badges" style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px;">
+            <span class="badge badge-green"><span class="badge-dot"></span>Available for Projects</span>
+            <span class="badge badge-blue">APAC · Middle East · Australia</span>
+          </div>
+          <h1 class="hero-title">Scaling Businesses<br/><span class="gradient-text">Through Agentic AI</span></h1>
+          <p class="hero-sub">I partner with C-suites to turn AI and cloud-native infrastructure into a direct P&amp;L lever — cutting operational costs, accelerating product velocity, and embedding autonomous intelligence across the enterprise before your competitors do.</p>
+          <div class="hero-ctas">
+            <a href="#schedule" class="btn btn-primary" style="background:linear-gradient(135deg,var(--primary),var(--accent));"><i class="far fa-calendar-check"></i> Launch Your AI Audit</a>
+            <a href="#portfolio" class="btn btn-outline"><i class="fas fa-microchip"></i> Explore AI Solutions</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-card">
+            <div class="hero-card-header">
+              <div class="avatar"><img src="https://drive.google.com/thumbnail?id=1uHpvUrN3evahC2A-w7s82rZgUkoEqdp3&sz=w200" onerror="this.src='Profile.jpg'" alt="Santanu Sarker"></div>
+              <div>
+                <div class="hero-card-title">Santanu Sarker</div>
+                <div class="hero-card-sub">Senior Solution Architect · WibbleWobble Tech</div>
+              </div>
+            </div>
+            <div class="stat-grid">
+              <div class="stat-box"><div class="stat-num">50+</div><div class="stat-lbl">Projects Shipped</div></div>
+              <div class="stat-box"><div class="stat-num">15+</div><div class="stat-lbl">Global Clients</div></div>
+              <div class="stat-box"><div class="stat-num">4</div><div class="stat-lbl">Regions Served</div></div>
+              <div class="stat-box"><div class="stat-num">10+</div><div class="stat-lbl">Years Experience</div></div>
+            </div>
+            <div class="availability-bar">
+              <div class="av-dot"></div>
+              <span class="av-text">Open to new projects</span>
+              <span class="av-sub">Responds in &lt;24h</span>
+            </div>
+            <div class="tech-row">
+              <span class="tech-pill">Next.js</span>
+              <span class="tech-pill">Node.js</span>
+              <span class="tech-pill">AI/LLM</span>
+              <span class="tech-pill">Flutter</span>
+              <span class="tech-pill">AWS</span>
+              <span class="tech-pill">Terraform</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       LOOM VIDEOS  — placed right after Hero
+  ══════════════════════════════════════════ -->
+  <section id="loom-videos">
+    <div class="container">
+      <div class="loom-section-header reveal">
+        <div class="section-label">Insights &amp; Thought Leadership</div>
+        <h2 class="section-title" style="font-size:clamp(1.75rem,4vw,2.5rem);">Watch: <span>AI Strategy in Action</span></h2>
+        <p class="section-sub" style="margin-bottom:0;">Short, high-signal videos on enterprise AI, GenAI architecture, and startup execution.</p>
+      </div>
+      <div class="loom-grid">
+
+        <!-- Video 1: CTO Playbook -->
+        <div class="loom-card reveal" onclick="openDriveVideo('11PM80AT6TTp-jT3-DMqWYvrdHIq_S7Et')" style="cursor:pointer;">
+          <div class="loom-thumb-wrap">
+            <img src="https://drive.google.com/thumbnail?id=11PM80AT6TTp-jT3-DMqWYvrdHIq_S7Et&sz=w640"
+                 alt="CTO Playbook for AI First P&L Leadership"
+                 style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"
+                 onerror="this.style.display='none';">
+            <div class="loom-play-overlay">
+              <div class="loom-play-btn"><i class="fas fa-play" style="margin-left:3px;"></i></div>
+            </div>
+          </div>
+          <div class="loom-info">
+            <div class="loom-label">Leadership · Strategy</div>
+            <div class="loom-title">CTO Playbook for AI First P&amp;L Leadership 🚀</div>
+            <span class="loom-watch">Watch now <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+
+        <!-- Video 2: Design AI -->
+        <div class="loom-card reveal" onclick="openDriveVideo('1qrM-WhtNXiB4UfULwOI_5YyYO4UW7QMJ')" style="cursor:pointer;">
+          <div class="loom-thumb-wrap">
+            <img src="https://drive.google.com/thumbnail?id=1qrM-WhtNXiB4UfULwOI_5YyYO4UW7QMJ&sz=w640"
+                 alt="Design AI for Performance and Reliability"
+                 style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"
+                 onerror="this.style.display='none';">
+            <div class="loom-play-overlay">
+              <div class="loom-play-btn"><i class="fas fa-play" style="margin-left:3px;"></i></div>
+            </div>
+          </div>
+          <div class="loom-info">
+            <div class="loom-label">Architecture · AI</div>
+            <div class="loom-title">Design AI for Performance and Reliability</div>
+            <span class="loom-watch">Watch now <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+
+        <!-- Video 3: Lean AI Infra -->
+        <div class="loom-card reveal" onclick="openDriveVideo('1JgMY7g8QDvECozvhRnLbQ2ilMbQRP_QQ')" style="cursor:pointer;">
+          <div class="loom-thumb-wrap">
+            <img src="https://drive.google.com/thumbnail?id=1JgMY7g8QDvECozvhRnLbQ2ilMbQRP_QQ&sz=w640"
+                 alt="Lean AI Infra for Startups, ROI Strategy"
+                 style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"
+                 onerror="this.style.display='none';">
+            <div class="loom-play-overlay">
+              <div class="loom-play-btn"><i class="fas fa-play" style="margin-left:3px;"></i></div>
+            </div>
+          </div>
+          <div class="loom-info">
+            <div class="loom-label">Startups · ROI</div>
+            <div class="loom-title">Lean AI Infra for Startups, ROI Strategy 🚀</div>
+            <span class="loom-watch">Watch now <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+
+        <!-- Video 4: AICOE -->
+        <div class="loom-card reveal" onclick="openDriveVideo('10PyxJzn81tBqUec28pMwbXcvnQH66URo')" style="cursor:pointer;">
+          <div class="loom-thumb-wrap">
+            <img src="https://drive.google.com/thumbnail?id=10PyxJzn81tBqUec28pMwbXcvnQH66URo&sz=w640"
+                 alt="Building Cost Optimized AICOE for AI Growth"
+                 style="width:100%;height:100%;object-fit:cover;position:absolute;inset:0;"
+                 onerror="this.style.display='none';">
+            <div class="loom-play-overlay">
+              <div class="loom-play-btn"><i class="fas fa-play" style="margin-left:3px;"></i></div>
+            </div>
+          </div>
+          <div class="loom-info">
+            <div class="loom-label">AI COE · Cost Optimization</div>
+            <div class="loom-title">Building Cost Optimized AICOE for AI Growth</div>
+            <span class="loom-watch">Watch now <i class="fas fa-arrow-right"></i></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Loom Modal -->
+  <div class="loom-modal-overlay" id="loomModal" onclick="closeLoom(event)">
+    <div class="loom-modal-inner">
+      <button class="loom-modal-close" onclick="closeLoomBtn()"><i class="fas fa-times"></i></button>
+      <iframe id="loomModalFrame" src="" allowfullscreen allow="autoplay; fullscreen" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <!-- STATS STRIP -->
+  <!-- HOW I BUILT THIS -->
+  <section id="how-i-built">
+    <div class="container">
+      <div class="section-header reveal" style="margin-bottom:48px;">
+        <div class="section-label">Point of View</div>
+        <h2 class="section-title">How I <span>Build This</span></h2>
+        <p class="section-sub" style="margin-bottom:0;">Real strategy, real architecture — a behind-the-scenes look at how I approach complex enterprise problems using AI-native thinking.</p>
+      </div>
+      <div class="hibt-grid">
+
+        <!-- Card 1 -->
+        <div class="hibt-card reveal">
+          <div class="hibt-thumb">
+            <img src="https://drive.google.com/thumbnail?id=1vlmjCGRjSr-NwGm4wRRFKxwR5cmLAwPL&sz=w640"
+                 alt="How I scale a family-run business"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div class="hibt-thumb-fallback" style="display:none;">🏪</div>
+            <span class="hibt-number">01</span>
+          </div>
+          <div class="hibt-body">
+            <div class="hibt-eyebrow">Growth · SMB · AI Strategy</div>
+            <div class="hibt-title">How I scale a family-run business in less than 2 years</div>
+            <a href="https://drive.google.com/file/d/14ViFkefCVK0k04PiEreBMmFcUoqAVy7g/view?usp=sharing" target="_blank" class="hibt-cta">
+              View strategy &amp; architecture using AI-tools here <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="hibt-card reveal">
+          <div class="hibt-thumb">
+            <img src="https://drive.google.com/thumbnail?id=1yXmdtC5nobAcMNTnoLGrhUv3m7eaRlSz&sz=w640"
+                 alt="Intelligence platform for oil & gas"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div class="hibt-thumb-fallback" style="display:none;">🛢️</div>
+            <span class="hibt-number">02</span>
+          </div>
+          <div class="hibt-body">
+            <div class="hibt-eyebrow">Enterprise · Oil &amp; Gas · Intelligence</div>
+            <div class="hibt-title">How I built an intelligence platform for one of the largest oil &amp; gas companies</div>
+            <a href="https://drive.google.com/file/d/170TQQXtlSYJUBP23dW4eG6q56xrNBCzL/view?usp=sharing" target="_blank" class="hibt-cta">
+              View strategy &amp; architecture using AI-tools here <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="hibt-card reveal">
+          <div class="hibt-thumb">
+            <img src="https://drive.google.com/thumbnail?id=1Ob5vQea8llVweVACHJgUE1k8O8un4v9w&sz=w640"
+                 alt="Airline intelligence system"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div class="hibt-thumb-fallback" style="display:none;">✈️</div>
+            <span class="hibt-number">03</span>
+          </div>
+          <div class="hibt-body">
+            <div class="hibt-eyebrow">Aviation · Capstone · AI Systems</div>
+            <div class="hibt-title">How I built an airline intelligence system in my capstone</div>
+            <a href="https://drive.google.com/file/d/1zuKOriGLf4IjV3oVv2yhqoCqsSgTqb4d/view?usp=sharing" target="_blank" class="hibt-cta">
+              View strategy &amp; architecture using AI-tools here <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="hibt-card reveal">
+          <div class="hibt-thumb">
+            <img src="https://drive.google.com/thumbnail?id=1ssH3AcOVtbapbenBdOIdltIwGh_vd44Q&sz=w640"
+                 alt="Intelligent supply chain system"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div class="hibt-thumb-fallback" style="display:none;">🌍</div>
+            <span class="hibt-number">04</span>
+          </div>
+          <div class="hibt-body">
+            <div class="hibt-eyebrow">Supply Chain · Crisis · West Asia</div>
+            <div class="hibt-title">How I built an intelligent supply chain system in the West Asia crisis in my capstone</div>
+            <a href="https://drive.google.com/file/d/1nzaiSK7MetqmtAJ6XNgjaUDOckYRdS2o/view?usp=sharing" target="_blank" class="hibt-cta">
+              View strategy &amp; architecture using AI-tools here <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="hibt-card reveal">
+          <div class="hibt-thumb">
+            <img src="https://drive.google.com/thumbnail?id=1YNhUzzkJteJULOvZkOlmGhbF3epRft4p&sz=w640"
+                 alt="Intelligent banking compliant Q&A system"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+            <div class="hibt-thumb-fallback" style="display:none;">🏦</div>
+            <span class="hibt-number">05</span>
+          </div>
+          <div class="hibt-body">
+            <div class="hibt-eyebrow">BFSI · Compliance · Generative AI</div>
+            <div class="hibt-title">How I built an intelligent banking compliant Q&amp;A system using AI intelligence</div>
+            <a href="https://drive.google.com/file/d/1xbh7EGZs15ypnC_YF3H9hWF2RJkbaKAK/view?usp=sharing" target="_blank" class="hibt-cta">
+              View strategy &amp; architecture using AI-tools here <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS STRIP (kept below) -->
+  <div class="stats-strip">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal"><div class="stat-big">120<span>+</span></div><div class="stat-label">AI Agents Deployed</div></div>
+        <div class="stat-item reveal"><div class="stat-big">25<span>+</span></div><div class="stat-label">Enterprise Partners</div></div>
+        <div class="stat-item reveal"><div class="stat-big">4</div><div class="stat-label">Global Tech Centers</div></div>
+        <div class="stat-item reveal"><div class="stat-big">95<span>%</span></div><div class="stat-label">Cost Reduction in Ops</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-wrap reveal">
+          <div class="about-img-placeholder">
+            <img src="https://drive.google.com/thumbnail?id=1uHpvUrN3evahC2A-w7s82rZgUkoEqdp3&sz=w800" onerror="this.src='Profile.jpg'" alt="Santanu Sarker - Senior Solution Architect">
+          </div>
+          <div class="about-badge-float">
+            <div class="num">10+</div>
+            <div class="lbl">Years in<br/>Solution Architecture</div>
+          </div>
+        </div>
+        <div class="about-content reveal">
+          <div class="section-label">My Philosophy</div>
+          <h2 class="section-title">I Architect Growth,<br/><span>Not Just Code</span></h2>
+          <p style="color:var(--muted);font-size:1rem;line-height:1.9;margin-bottom:16px;">WibbleWobble Tech is my specialized AI Solution Architecture studio. I partner with high-growth startups and enterprises to bridge the gap between complex business requirements and high-performance digital ecosystems.</p>
+          <p style="color:var(--muted);font-size:1rem;line-height:1.9;margin-bottom:28px;">My mission is simple: To eliminate operational friction through Agentic AI and autonomous systems. I don't just deliver software; I deliver measurable ROI and scalable engineering excellence.</p>
+          <div>
+            <div style="font-size:0.78rem;color:var(--primary);font-family:var(--mono);text-transform:uppercase;letter-spacing:0.1em;margin-bottom:16px;">Tech Stack &amp; Skills</div>
+            <div>
+              <span class="skill-tag">Next.js / React Native</span>
+              <span class="skill-tag">Flutter / Dart</span>
+              <span class="skill-tag">AI / LLM Integration</span>
+              <span class="skill-tag">Node.js / Python</span>
+              <span class="skill-tag">Solution Architecture</span>
+              <span class="skill-tag">AWS / GCP / Azure</span>
+              <span class="skill-tag">Docker / Kubernetes</span>
+              <span class="skill-tag">Terraform (IaC)</span>
+              <span class="skill-tag">REST &amp; GraphQL APIs</span>
+              <span class="skill-tag">FinTech &amp; HealthTech</span>
+              <span class="skill-tag">Technical Consulting</span>
+              <span class="skill-tag">Performance Optimization</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header center reveal">
+        <div class="section-label">My Solutions</div>
+        <h2 class="section-title">Engineering for <span>Autonomous Scale</span></h2>
+        <p class="section-sub">End-to-end AI transformation and product strategy built for the next generation of business.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-sitemap"></i></div>
+          <div class="service-title">Solution Architecture</div>
+          <p class="service-desc">Strategic technical planning for complex systems. Scalable database design, high-performance API structures, and cloud-native architecture.</p>
+          <div class="service-tags"><span class="service-tag">AWS/GCP</span><span class="service-tag">System Design</span><span class="service-tag">Scalability</span></div>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-layer-group"></i></div>
+          <div class="service-title">Full Stack Development</div>
+          <p class="service-desc">Complete product builds from idea to production-ready software. Specializing in modern JS ecosystems and performant backends.</p>
+          <div class="service-tags"><span class="service-tag">Next.js</span><span class="service-tag">Node.js</span><span class="service-tag">Python</span><span class="service-tag">TypeScript</span></div>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+          <div class="service-title">Mobile App Development</div>
+          <p class="service-desc">High-quality cross-platform apps that feel native. Industry-leading performance and pixel-perfect UI/UX delivery.</p>
+          <div class="service-tags"><span class="service-tag">Flutter</span><span class="service-tag">React Native</span><span class="service-tag">Dart</span></div>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-robot"></i></div>
+          <div class="service-title">AI &amp; LLM Integration</div>
+          <p class="service-desc">Powering your business with AI. Custom LLM agents, vector databases, and seamless OpenAI/Anthropic API implementations.</p>
+          <div class="service-tags"><span class="service-tag">OpenAI</span><span class="service-tag">LangChain</span><span class="service-tag">Vector DBs</span></div>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-rocket"></i></div>
+          <div class="service-title">MVP Strategy &amp; Build</div>
+          <p class="service-desc">Accelerated development for founders. Rapid prototyping and shipment of core value propositions in under 60 days.</p>
+          <div class="service-tags"><span class="service-tag">MVP Package</span><span class="service-tag">Agile Ship</span><span class="service-tag">Fixed Scope</span></div>
+        </div>
+        <div class="service-card reveal featured-neon">
+          <div class="service-icon neon-glow"><i class="fab fa-linkedin"></i></div>
+          <div class="service-title neon-text">LinkedIn REBOOT</div>
+          <p class="service-desc">High-frequency LinkedIn optimization that shatters the recruiter ceiling. ATS-crushing power, storytelling rewrites, and industry targeting.</p>
+          <div class="service-tags"><span class="service-tag neon-border">REBOOT</span><span class="service-tag neon-border">OPTIMIZATION</span><span class="service-tag neon-border">ROI</span></div>
+          <a href="reboot/index.html" class="btn btn-neon" target="_blank" style="margin-top:20px;width:100%;justify-content:center;"><i class="fas fa-bolt"></i> Explore REBOOT</a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fas fa-terminal"></i></div>
+          <div class="service-title">Technical Consultation</div>
+          <p class="service-desc">One-on-one architectural audits, code reviews, and tech-debt strategies for engineering leaders globally.</p>
+          <div class="service-tags"><span class="service-tag">Hourly</span><span class="service-tag">Audit</span><span class="service-tag">Code Review</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Selected Work</div>
+        <h2 class="section-title">Projects That <span>Delivered Results</span></h2>
+        <p class="section-sub">A selection of products built, scaled, and shipped for clients globally.</p>
+      </div>
+      <div class="portfolio-grid">
+
+        <!-- PROJECT 1: Enterprise CRM (replaces Website Development) -->
+        <div class="project-card reveal">
+          <div class="project-thumb">🏢</div>
+          <div class="project-body">
+            <div class="project-title">Enterprise CRM Development</div>
+            <p class="project-desc">End-to-end enterprise CRM architecture and delivery — custom-built to unify sales pipelines, client data, and automation workflows for global operations.</p>
+            <div class="project-tags"><span class="project-tag">CRM Architecture</span><span class="project-tag">Enterprise</span><span class="project-tag">Automation</span></div>
+            <a href="https://drive.google.com/file/d/1EQ8xjpvZYQhSyo7D8h3eQzpIkBO8Dh3m/view?usp=sharing" target="_blank" class="project-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- PROJECT 2: Automation Development (2 case studies) -->
+        <div class="project-card reveal">
+          <div class="project-thumb">⚙️</div>
+          <div class="project-body">
+            <div class="project-title">Automation Development: Enterprise Workflows</div>
+            <p class="project-desc">Custom Python and Node.js solutions to automate repetitive business tasks, saving over 200+ engineering hours monthly for global clients.</p>
+            <div class="project-tags"><span class="project-tag">Python</span><span class="project-tag">Zapier/Make</span><span class="project-tag">Custom APIs</span></div>
+            <div class="case-study-links">
+              <a href="https://drive.google.com/file/d/1AIF5rNn2YRW6SUEKXSpITv_k_GlAdQ2A/view?usp=sharing" target="_blank" class="project-link">View Case Study 1 <i class="fas fa-arrow-right"></i></a>
+              <a href="https://drive.google.com/file/d/1BFHBnza8_ER6nTzN1R4xFZLNCDrJ2KxF/view?usp=sharing" target="_blank" class="project-link">View Case Study 2 <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 3: Product Design -->
+        <div class="project-card reveal">
+          <div class="project-thumb">🚀</div>
+          <div class="project-body">
+            <div class="project-title">Product Design &amp; Development: MVP to Scale</div>
+            <p class="project-desc">End-to-end product lifecycle management. From Figma prototypes to production-ready scalable cloud architectures.</p>
+            <div class="project-tags"><span class="project-tag">Figma</span><span class="project-tag">Full Stack</span><span class="project-tag">Solution Architecture</span></div>
+            <a href="#" class="project-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- PROJECT 4: Enterprise AI Optimization Challenge (NEW) -->
+        <div class="project-card reveal">
+          <div class="project-thumb" style="overflow:hidden;padding:0;">
+            <img src="https://drive.google.com/thumbnail?id=1Sgm_4HQjXNs_KMmUgzZjl64F4jPNs0yF&sz=w640"
+                 alt="Enterprise AI Optimization Challenge"
+                 style="width:100%;height:100%;object-fit:cover;"
+                 onerror="this.style.display='none';this.parentElement.innerHTML='🤖';">
+          </div>
+          <div class="project-body">
+            <div class="project-title">Enterprise AI Optimization Challenge</div>
+            <p class="project-desc">Architected and delivered an enterprise-scale AI optimization solution — reducing inference costs, improving model accuracy, and deploying at production SLA.</p>
+            <div class="project-tags"><span class="project-tag">AI Optimization</span><span class="project-tag">MLOps</span><span class="project-tag">Enterprise Scale</span></div>
+            <a href="https://drive.google.com/file/d/1dYOtjKfa6Be9glNbQccHPCpUJO4XzRiY/view?usp=sharing" target="_blank" class="project-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- PROJECT 5: Market Research -->
+        <div class="project-card reveal">
+          <div class="project-thumb">📊</div>
+          <div class="project-body">
+            <div class="project-title">Market Research &amp; Analysis: Data-Driven Strategy</div>
+            <p class="project-desc">Deep-dive market analysis using tools like Ubersuggest and Ahrefs to identify gaps and opportunities for tech startups.</p>
+            <div class="project-tags"><span class="project-tag">Market Analysis</span><span class="project-tag">SEO Strategy</span><span class="project-tag">ROI Projections</span></div>
+            <a href="#" class="project-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- PROJECT 6: Social Media Automation -->
+        <div class="project-card reveal">
+          <div class="project-thumb">🤖</div>
+          <div class="project-body">
+            <div class="project-title">Social Media Automation: Intelligent Engagement</div>
+            <p class="project-desc">AI-powered systems for content generation, scheduling, and community engagement across LinkedIn and X.</p>
+            <div class="project-tags"><span class="project-tag">LLM Integration</span><span class="project-tag">Auto-Posting</span><span class="project-tag">AI Search</span></div>
+            <a href="#" class="project-link">View Case Study <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW I BUILD THIS -->
+  <section id="how-i-build">
+    <div class="container">
+      <div class="section-header reveal" style="margin-bottom:48px;">
+        <div class="section-label">Point of View</div>
+        <h2 class="section-title">How I <span>Build This</span></h2>
+        <p class="section-sub" style="margin-bottom:0;">Real strategies, real deployments — a first-person look at how I architect and deliver AI-powered transformation across industries.</p>
+      </div>
+      <div class="hibt-grid">
+
+        <!-- Card 1: Family-run business -->
+        <div class="hibt-card reveal">
+          <div class="hibt-thumb">
+            <img src="https://drive.google.com/thumbnail?id=1vlmjCGRjSr-NwGm4wRRFKxwR5cmLAwPL&sz=w640"
+                 alt="How I scale a family-run business"
+                 onerror="this.style.display='none';this.parentElement.style.background='#1e3a5f';">
+            <div class="hibt-num">01</div>
+          </div>
+          <div class="hibt-body">
+            <div class="hibt-tag">Business Transformation</div>
+            <h3 class="hibt-title">How I scale a family-run business in less than 2 years</h3>
+            <a href="https://drive.google.com/file/d/14ViFkefCVK0k04PiEreBMmFcUoqAVy7g/view?usp=sharing"
+               target="_blank" class="hibt-link">
+              <i class="fas fa-file-alt"></i> View strategy &amp; architecture using AI-tools here
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2: Oil & Gas intelligence platform -->
+        <div class="hibt-card reveal">
+          <div class="hibt-thumb">
+            <img src="https://drive.google.com/thumbnail?id=1yXmdtC5nobAcMNTnoLGrhUv3m7eaRlSz&sz=w640"
+                 alt="Intelligence platform for oil & gas"
+                 onerror="this.style.display='none';this.parentElement.style.background='#1e3a5f';">
+            <div class="hibt-num">02</div>
+          </div>
+          <div class="hibt-body">
+            <div class="hibt-tag">Energy · Enterprise AI</div>
+            <h3 class="hibt-title">How I built an intelligence platform for one of the largest oil &amp; gas companies</h3>
+            <a href="https://drive.google.com/file/d/170TQQXtlSYJUBP23dW4eG6q56xrNBCzL/view?usp=sharing"
+               target="_blank" class="hibt-link">
+              <i class="fas fa-file-alt"></i> View strategy &amp; architecture using AI-tools here
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3: Airline intelligence system -->
+        <div class="hibt-card reveal">
+          <div class="hibt-thumb">
+            <img src="https://drive.google.com/thumbnail?id=1Ob5vQea8llVweVACHJgUE1k8O8un4v9w&sz=w640"
+                 alt="Airline intelligence system"
+                 onerror="this.style.display='none';this.parentElement.style.background='#1e3a5f';">
+            <div class="hibt-num">03</div>
+          </div>
+          <div class="hibt-body">
+            <div class="hibt-tag">Aviation · Capstone</div>
+            <h3 class="hibt-title">How I built an airline intelligence system in my capstone</h3>
+            <a href="https://drive.google.com/file/d/1zuKOriGLf4IjV3oVv2yhqoCqsSgTqb4d/view?usp=sharing"
+               target="_blank" class="hibt-link">
+              <i class="fas fa-file-alt"></i> View strategy &amp; architecture using AI-tools here
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 4: Supply chain system -->
+        <div class="hibt-card reveal">
+          <div class="hibt-thumb">
+            <img src="https://drive.google.com/thumbnail?id=1ssH3AcOVtbapbenBdOIdltIwGh_vd44Q&sz=w640"
+                 alt="Intelligent supply chain system"
+                 onerror="this.style.display='none';this.parentElement.style.background='#1e3a5f';">
+            <div class="hibt-num">04</div>
+          </div>
+          <div class="hibt-body">
+            <div class="hibt-tag">Supply Chain · West Asia</div>
+            <h3 class="hibt-title">How I built an intelligent supply chain system in the West Asia crisis</h3>
+            <a href="https://drive.google.com/file/d/1nzaiSK7MetqmtAJ6XNgjaUDOckYRdS2o/view?usp=sharing"
+               target="_blank" class="hibt-link">
+              <i class="fas fa-file-alt"></i> View strategy &amp; architecture using AI-tools here
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 5: Banking Q&A system -->
+        <div class="hibt-card reveal">
+          <div class="hibt-thumb">
+            <img src="https://drive.google.com/thumbnail?id=1YNhUzzkJteJULOvZkOlmGhbF3epRft4p&sz=w640"
+                 alt="Intelligent banking compliant Q&A system"
+                 onerror="this.style.display='none';this.parentElement.style.background='#1e3a5f';">
+            <div class="hibt-num">05</div>
+          </div>
+          <div class="hibt-body">
+            <div class="hibt-tag">BFSI · Compliance · AI</div>
+            <h3 class="hibt-title">How I built an intelligent banking compliant Q&amp;A system using AI</h3>
+            <a href="https://drive.google.com/file/d/1xbh7EGZs15ypnC_YF3H9hWF2RJkbaKAK/view?usp=sharing"
+               target="_blank" class="hibt-link">
+              <i class="fas fa-file-alt"></i> View strategy &amp; architecture using AI-tools here
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section id="schedule">
+    <div class="container">
+      <div class="section-header center reveal">
+        <div class="section-label">Book a Session</div>
+        <h2 class="section-title">Let's Talk About <span>Your ROI</span></h2>
+        <p class="section-sub">Choose a session type and pick a time that works for you. All sessions are held on Google Meet.</p>
+      </div>
+      <div class="schedule-layout">
+        <div>
+          <div class="session-cards reveal">
+            <div class="session-card active" onclick="selectSession(this)">
+              <div class="session-icon" style="background:rgba(37,99,235,0.12);color:#60A5FA;"><i class="fas fa-search"></i></div>
+              <div class="session-info">
+                <div class="session-title">Discovery Call</div>
+                <div class="session-meta"><i class="far fa-clock"></i> 15 min · Google Meet · Free</div>
+              </div>
+              <div class="session-price" style="color:#10B981;">Free</div>
+            </div>
+            <div class="session-card" onclick="selectSession(this)">
+              <div class="session-icon" style="background:rgba(16,185,129,0.12);color:#34D399;"><i class="fas fa-code"></i></div>
+              <div class="session-info">
+                <div class="session-title">Technical Consultation</div>
+                <div class="session-meta"><i class="far fa-clock"></i> 60 min · Code review / Architecture</div>
+              </div>
+              <div class="session-price" style="color:#F59E0B;">$75</div>
+            </div>
+          </div>
+          <div class="timezone-bar reveal" style="margin-top:20px;">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+              <h4 style="margin:0;font-family:var(--head);font-weight:700;color:var(--white);"><i class="fas fa-globe" style="color:var(--primary);margin-right:8px;"></i>Global Working Hours</h4>
+              <div id="liveStatus" class="badge"></div>
+            </div>
+            <div class="tz-row"><span>🇮🇳 India (IST)</span><span>10:00 AM – 09:00 PM</span></div>
+            <div class="tz-row"><span>🇬🇧 London (GMT)</span><span>04:30 AM – 03:30 PM</span></div>
+            <div class="tz-row"><span>🇺🇸 New York (EST)</span><span>11:30 PM – 10:30 AM</span></div>
+            <div class="tz-row"><span>🇸🇬 Singapore (SGT)</span><span>12:30 PM – 11:30 PM</span></div>
+            <div class="tz-row"><span>🇦🇪 Dubai (GST)</span><span>08:30 AM – 07:30 PM</span></div>
+          </div>
+        </div>
+        <div class="calendly-wrap reveal">
+          <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ3KKH88CXeUFIKKK2BRKy_xbdGNijGGBzK8AObJi7WrT31lIBDHmZB2l2J8rPKSOBph1Xz1YSMa" target="_blank" class="btn btn-primary">
+            <i class="far fa-calendar-check"></i> Book Now on Google Meet
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- YOUTUBE -->
+  <section id="youtube">
+    <div class="container">
+      <div class="yt-banner reveal">
+        <div class="yt-info">
+          <div class="section-label">YouTube Channel</div>
+          <div class="yt-channel-name">WibbleWobble Tech</div>
+          <p class="yt-desc">Build-in-public content on solution architecture, product thinking, and engineering for scale.</p>
+          <a href="https://www.youtube.com/@wibblewobbletech" target="_blank" class="btn btn-accent"><i class="fab fa-youtube"></i> Subscribe</a>
+        </div>
+        <div class="yt-icon-wrap"><i class="fab fa-youtube"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONNECT -->
+  <section id="connect">
+    <div class="container">
+      <div class="section-header center reveal">
+        <div class="section-label">Get in Touch</div>
+        <h2 class="section-title">Let's <span>Connect</span></h2>
+        <p class="section-sub">Serious enquiries responded to within 24 hours.</p>
+      </div>
+      <div class="connect-grid">
+        <a href="https://wa.me/919620393657" target="_blank" class="connect-card whatsapp reveal">
+          <div class="connect-icon"><i class="fab fa-whatsapp"></i></div>
+          <div class="connect-name">WhatsApp</div>
+          <span class="connect-action">Chat Now <i class="fas fa-arrow-right"></i></span>
+        </a>
+        <a href="https://www.linkedin.com/in/santanusarker" target="_blank" class="connect-card linkedin reveal">
+          <div class="connect-icon"><i class="fab fa-linkedin-in"></i></div>
+          <div class="connect-name">LinkedIn</div>
+          <span class="connect-action">Connect <i class="fas fa-arrow-right"></i></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HIRE ME -->
+  <section id="hire">
+    <div class="container">
+      <div class="hire-layout">
+        <div class="reveal">
+          <div class="section-label">Work With Me</div>
+          <h2 class="section-title">Transparent <span>Pricing</span></h2>
+          <div class="pricing-cards">
+            <div class="pricing-card featured">
+              <div class="pricing-info">
+                <div class="pricing-tier">MVP Build Package ⭐</div>
+                <div class="pricing-scope">Full product · 30–60 days</div>
+              </div>
+              <div class="pricing-price">From $3,000</div>
+            </div>
+            <div class="pricing-card">
+              <div class="pricing-info">
+                <div class="pricing-tier">Monthly Retainer</div>
+                <div class="pricing-scope">Ongoing development &amp; support</div>
+              </div>
+              <div class="pricing-price">From $2,000/mo</div>
+            </div>
+          </div>
+        </div>
+        <div class="hire-cta-box reveal">
+          <i class="fas fa-handshake" style="font-size:2.5rem;color:var(--primary);margin-bottom:20px;"></i>
+          <h2>Ready to Build?</h2>
+          <p>Let's start with a free 15-minute discovery call to discuss your project ROI.</p>
+          <div class="hire-btns">
+            <a href="#schedule" class="btn btn-primary" style="justify-content:center;"><i class="far fa-calendar-check"></i> Book a Call</a>
+            <a href="mailto:santa@wibblewobbleapp.com" class="btn btn-outline" style="justify-content:center;"><i class="fas fa-envelope"></i> Email Me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-main">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-logo"><div class="logo-mark">S</div> Santanu Sarker</div>
+            <p class="footer-desc">Senior Solution Architect building digital solutions for high-growth global clients.</p>
+          </div>
+          <div>
+            <div class="footer-col-title">Navigate</div>
+            <ul class="footer-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolio">Work</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-col-title">Contact</div>
+            <div class="footer-contact-item"><i class="fas fa-envelope"></i> <a href="mailto:santa@wibblewobbleapp.com">santa@wibblewobbleapp.com</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-inner">
+          <div class="footer-copy">&copy; 2026 <strong>Santanu Sarker</strong> · All rights reserved.</div>
+          <div class="footer-regions">
+            <span class="region-chip">APAC</span>
+            <span class="region-chip">Middle East</span>
+            <span class="region-chip">Australia</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/919620393657" class="wa-float" target="_blank" title="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="wa-tooltip">Chat on WhatsApp</span>
+  </a>
+
+  <script>
+    // ── Navbar scroll ──
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 40); });
+
+    // ── Active nav link ──
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) current = s.getAttribute('id'); });
+      navLinks.forEach(l => { l.classList.toggle('active', l.getAttribute('href') === '#' + current); });
+    });
+
+    function openMobileMenu()  { document.getElementById('mobileMenu').classList.add('open'); }
+    function closeMobileMenu() { document.getElementById('mobileMenu').classList.remove('open'); }
+
+    // ── Reveal on scroll ──
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 80);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => observer.observe(el));
+
+    function selectSession(card) {
+      document.querySelectorAll('.session-card').forEach(c => c.classList.remove('active'));
+      card.classList.add('active');
+    }
+
+    // ── Live status ──
+    function updateTimes() {
+      const now = new Date();
+      const istHour = parseInt(new Intl.DateTimeFormat('en-US', {
+        timeZone: 'Asia/Kolkata', hour: 'numeric', hour12: false
+      }).format(now));
+      const statusEl = document.getElementById('liveStatus');
+      if (istHour >= 10 && istHour < 21) {
+        statusEl.innerHTML = '<span class="badge-dot"></span> Online Now';
+        statusEl.className = 'badge badge-green';
+      } else {
+        statusEl.innerHTML = '<span class="badge-dot" style="background:#64748B;box-shadow:none;animation:none;"></span> Away';
+        statusEl.className = 'badge badge-blue';
+      }
+    }
+    updateTimes();
+    setInterval(updateTimes, 60000);
+
+    // ── Smooth scroll ──
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      });
+    });
+
+    // ── Google Drive Video Modal ──
+    function openDriveVideo(fileId) {
+      const modal = document.getElementById('loomModal');
+      const frame = document.getElementById('loomModalFrame');
+      // Google Drive preview embed — works for publicly shared video files
+      frame.src = 'https://drive.google.com/file/d/' + fileId + '/preview';
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLoom(e) {
+      if (e.target === document.getElementById('loomModal')) closeLoomBtn();
+    }
+    function closeLoomBtn() {
+      const modal = document.getElementById('loomModal');
+      const frame = document.getElementById('loomModalFrame');
+      modal.classList.remove('active');
+      frame.src = '';
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLoomBtn(); });
+  </script>
+
+  <!-- Chatbot — always last, just before </body> -->
+  <script src="/live_app/chatbot.js" defer></script>
+</body>
+</html>
